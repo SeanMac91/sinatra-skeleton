@@ -1,139 +1,110 @@
-h1 {
-  margin: auto;
-  text-align: center;
-  font-size: 40px;
-  font-family: Arial;
-  color: green;
-}
-
 body{
   
-  background:url('http://p1.pichost.me/i/30/1534135.jpg') center no-repeat;
+  background:url('http://make-me-successful.com/wp-content/uploads/2015/04/Toyogeki-Movie_Toyooka002.jpg') center no-repeat;
   background-size:cover;
   background-color:#f0f0f0;
   font-family:helvetica;
 }
 
-a{
+h2{
+  color: #6875B0;
+  text-align: center;
+  font-family: cursive;
+  background-color: white;
+  border: 2px solid black;
+}
+
+form{
+  /*width: 50%;*/
+  border:2px solid black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5em;
+  padding-top: 2em;
+}
+
+div{
+  padding: 0.4em;
+  font-family: sans-serif;
+  /*position:relative;*/
+}
+
+.btn-submit {
+  width:140px;
+  margin:17px auto;
   display:block;
-  color:#ad5482;  
-  text-decoration:none;
-  font-weight:bold;
-  margin-top:40px;
-  text-align:center;
-}
-
-#bg{
-  position:relative;
-  top:20px;
-  height:600px;
-  width:800px;
-  margin-left:auto;
-  margin-right:auto; 
 }
 
 
-.module{
-  position:relative;
-  top:15%;    
-  height:70%;
-  width:450px;
-  margin-left:auto;
-  margin-right:auto;
-  border-radius:5px;
-  background: RGBA(255,255,255,1);
-    
-  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
-  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
-  
+/*input{
+  position: absolute;
+  right:30%;
+  bottom:10%;
+}
+*/
+label{
+/*  position: absolute;
+  left:30%;
+  bottom:3%;*/
+  color: #6875B0;
 }
 
-.module ul{
-  list-style-type:none;
-  margin:0;
+.signupsubmit{
+  right: 10%;
+  bottom: 6em;
+  width: 6em;
+  background-color: #28BFBF;
 }
 
-.tab{
-  float:left;
-  height:60px;
-  width:25%;
-  padding-top:20px;
-  box-sizing:border-box;
-  background:#eeeeee;  
-  text-align:center;
-  cursor:pointer;
-  transition:background .4s;
+.loginsubmit{
+  right:10%;
+  bottom:2.5em;
+  width: 6em;
+  background-color: #28BFBF;
 }
 
-.tab:first-child{  
-  -webkit-border-radius: 5px 0px 0px 0px;
-  border-radius: 5px 0px 0px 0px;
+.selectbox{
+  left: 8.2%;
+  margin-bottom: -2%;
 }
 
-.tab:last-child{  
-  -webkit-border-radius: 0px 5px 0px 0px;
-  border-radius: 0px 5px 0px 0px;
+.genderchoices{
+  top:1em;
 }
 
-.tab:hover{  
-  background-color:rgba(0,0,0,.1);
+.profilebutton{
+  right: 8%;
+  bottom: 6.7em;
+  background-color: #28BFBF;
 }
 
-.activeTab{
-  background:#fff;
+.btn-login {
+  width:140px;
+  margin:16px auto;
+  display:block;
 }
 
-.activeTab .icon{
-  opacity:1;
+.btn-signup{
+  width:140px;
+  margin:16px auto;
+  display:block;
+
 }
 
-.icon{
-  height:24px;
-  width:24px;
-  opacity:.2;
+
+.bluebutton{
+  padding-left:200px;
 }
 
-.form{
-  float:left;
-  height:86%;
-  width:100%;
-  box-sizing:border-box;
-  padding:40px;
+.formbackgroundcolor{
+  background-color:#C0C4C4;
 }
 
-.textbox {
-  height:50px;
-  width:100%;
-  border-radius:3px;
-  border:rgba(0,0,0,.3) 2px solid;
-  box-sizing:border-box;
-  padding:10px;
-  margin-bottom:30px;
-}
-
-.textbox:focus{
-  outline:none;
-   border:rgba(24,149,215,1) 2px solid;
-   color:rgba(24,149,215,1);
-}
-
-.button{
-  height:50px;
-  width:100%;
-  border-radius:3px;
-  border:rgba(0,0,0,.3) 0px solid;
-  box-sizing:border-box;
-  padding:10px;
-  margin-bottom:30px;
-  background:#90c843;
-  color:#FFF;
-  font-weight:bold;
-  font-size: 12pt;
-  transition:background .4s;
-  cursor:pointer;
-}
-
-.button:hover{
-  background:#80b438;
-  
+/*user container */
+.user-container {
+  float: right;
+  padding: 20px;
+  margin: 10px;
+  background: #fff;
+  border: 1px solid #000;
 }

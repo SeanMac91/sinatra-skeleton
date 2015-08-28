@@ -1,31 +1,39 @@
 <body>
-  <h2> Profile Form </h2>
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <form action="/profile/edit" method="POST" class="form-horizontal formbackgroundcolor">
-        
-        <div class="form-group">
-          <label for="email" class="col-sm-2 control-label"> E-mail: </label>
-          <div class="col-sm-8">
-            <input type="text" name="email" id="email" value="<%= @current_user.email %>" placeholder="Enter email address" class="form-control"/>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="password" class="col-sm-2 control-label"> Password: </label>
-          <div class="col-sm-8">
-            <input type="password" name="password" id="password" value="<%= @current_user.password %>" placeholder="Enter password" class="form-control" />
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="username" class="col-sm-2 control-label"> Username: </label>
-          <div class="col-sm-8">
-            <input type="text" name="username" id="username" value="<%= @current_user.username%>" placeholder="Enter username" class="form-control" /> <br/>
-          </div>
-        </div>
-        <button type="submit" class="btn-submit btn btn-primary">Submit Information</button>
-      </form>
-    </div>
+<h1>Login</h1>
+ <div id="bg">
+  <div class="module">
+    <ul>
+      <li class="tab activeTab"><img src="http://fc00.deviantart.net/fs71/f/2012/251/6/d/slendy_dance_icon_by_reitanna_seishin-d5e0izl.gif" alt="" class="icon"/></li>
+      <li class="tab" ><img src="https://sevenbreaths.files.wordpress.com/2009/04/mail-icon-48x48.png" alt="" class="icon"/></li>
+      <li class="tab" ><img src="http://findicons.com/files/icons/2282/pixelophilia/32/settings.png" alt="" class="icon"/></li>
+      <li class="tab" ><img src="http://www.sherv.net/cm/emo/happy/thumbs-up.gif" alt="" class="icon"/></li>
+    </ul>
+    
+    <form class="form">
+      <input type="text" placeholder="Email Address" class="textbox" />
+        <input type="password" name="password" id="password" value="<%= @current_user.password %>" placeholder="Enter Password" class="form-control" />
+      <input type="button" value="Next" class="button" />
+    </form>
   </div>
+</div>
+
+
+<h1>Sign Up</h1>
+ <div id="bg">
+  <div class="module">
+    <ul>
+      <li class="tab activeTab"><img src="http://fc00.deviantart.net/fs71/f/2012/251/6/d/slendy_dance_icon_by_reitanna_seishin-d5e0izl.gif" alt="" class="icon"/></li>
+      <li class="tab" ><img src="https://sevenbreaths.files.wordpress.com/2009/04/mail-icon-48x48.png" alt="" class="icon"/></li>
+      <li class="tab" ><img src="http://findicons.com/files/icons/2282/pixelophilia/32/settings.png" alt="" class="icon"/></li>
+      <li class="tab" ><img src="http://www.sherv.net/cm/emo/happy/thumbs-up.gif" alt="" class="icon"/></li>
+    </ul>
+    
+    <form class="form">
+      <input type="text" placeholder="First Name" class="textbox" />
+      <input type="text" placeholder="Last Name" class="textbox" />
+      <input type="text" placeholder="Email Address" class="textbox" />
+      <input type="button" value="Next" class="button" />
+    </form>
+  </div>
+</div>
 </body>
