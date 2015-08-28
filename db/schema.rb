@@ -13,12 +13,22 @@
 
 ActiveRecord::Schema.define(version: 2) do
 
-  create_table "movies", force: :cascade do |t|
+ create_table "movies", force: :cascade do |t|
     t.string   "title"
+    t.string   "release_date"
     t.string   "director"
-    t.date     "release"
+    t.string   "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.string   "image_url"
+  end
+
+   create_table "reviews", force: :cascade do |t|
+    t.string   "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "movie_id"
     t.integer  "user_id"
   end
 

@@ -7,18 +7,35 @@
     See: http://necolas.github.com/normalize.css/
   -->
   <link rel="stylesheet" href="/stylesheets/normalize.css">
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
   <!--
     application.css is where you put your styles
   -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="/stylesheets/application.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/javascript/application.js"></script>
 
-  <title>My Project</title>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <title></title>
 </head>
 <body>
+  <span class="user-container">
+    <% if current_user %>
+      <h5><%= current_user.username %></h5>
+      <button>Logout</button>
+    <% else %>
+      <a href="/login"> Login and Signup </a>
+    <% end %>
+  </span>
   <%= yield %>
 </body>
 </html>
